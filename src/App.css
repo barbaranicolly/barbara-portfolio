@@ -1,0 +1,141 @@
+.about{
+  display: flex;
+}
+.about-content{
+  width: 50%;
+}
+.about-image{
+  width: 50%;
+}
+.about-image img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+* {
+  box-sizing: border-box;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  border-bottom: 1px solid #08060d;
+  border-left: none;
+  border-right: none;
+}
+nav a{
+  color: #ccd6f6;
+  text-decoration: none;
+}
+html, body, #root{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+body
+{
+  font-family: "NTR", sans-serif;
+  background-color: #0a192f;
+  color: #ccd6f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: none;
+
+}
+span{
+  color: #64ffda;
+}
+.hero{
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  padding-bottom: 20px;
+  justify-content: center;
+  gap: 100px;
+  max-height: 1100px;
+  margin: 0 auto;
+
+}
+.hero h1{
+  font-size:48px;
+  margin-bottom: 15px;
+  color: #ccd6f6;
+
+}
+.hero p{
+  margin: 8px 0;
+  text-align: justify;
+}
+.animation{
+  width: 400px;
+  height: 400px;
+}
+.hero-content{
+  width: 500px;
+}
+.hero-content h1{
+  font-family: NTR, sans-serif;
+  margin: 0;
+  font-size: 48px;
+
+}
+.hero-content p{
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+.animation {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 180px;
+  height: 180px;
+  border: 2px solid #64ffda;
+  border-radius: 50%;
+  position: absolute;
+  animation: pulse 3s infinite ease-in-out;
+}
+
+.circle2 {
+  width: 230px;
+  height: 230px;
+  opacity: 0.5;
+  animation-delay: 0.5s;
+}
+
+.circle3 {
+  width: 280px;
+  height: 280px;
+  opacity: 0.2;
+  animation-delay: 1s;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+}
+.about h2{
+  color: #ccd6f6;
+  font-size: 40px;
+  text-align: center;
+  justify-content: center;
+
+}
